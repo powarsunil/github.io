@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunil Krishnakant Powar – Hospitality & QA Resume</title>
+  <style>
+    :root {
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --header-color: #2c3e50;
+      --accent-color: #2980b9;
+      --card-bg: #fff;
+    }
+    body.dark-mode {
+      --bg-color: #1e1e1e;
+      --text-color: #ddd;
+      --header-color: #f0f0f0;
+      --accent-color: #4aa3df;
+      --card-bg: #2a2a2a;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: var(--card-bg);
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+    h1 {
+      font-size: 2rem;
+      color: var(--header-color);
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+    .contact {
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    .contact a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+    h2 {
+      color: var(--header-color);
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .job-title {
+      font-weight: bold;
+      color: var(--header-color);
+    }
+    .date {
+      font-style: italic;
+      color: #7f8c8d;
+    }
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background: var(--accent-color);
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .toggle-icon {
+      font-size: 1.2rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: var(--accent-color);
+    }
+    .skill-bar {
+      background: #e0e0e0;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .skill-level {
+      height: 10px;
+      background: var(--accent-color);
+      width: 0;
+      animation: growSkill 2s ease forwards;
+    }
+    @keyframes growSkill {
+      to { width: var(--target-width); }
+    }
+    .qr-code {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .qr-code img {
+      width: 120px;
+      height: 120px;
+    }
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+    @media print {
+      body {
+        background: white;
+        color: black;
+      }
+      .controls {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <button onclick="toggleDarkMode()" class="toggle-icon" title="Toggle Dark Mode">🌙</button>
+      <button onclick="window.print()">Download PDF</button>
+    </div>
+
+    <h1>Sunil Krishnakant Powar</h1>
+    <div class="subtitle">Hospitality & QA Specialist</div>
+    <div class="contact">
+      San Antonio, TX 📞 +1 (726) 666 0715 ✉️ <a href="mailto:sunilpowar@proton.me">sunilpowar@proton.me</a><br>
+      🔗 <a href="https://linkedin.com/in/skpowar" target="_blank">linkedin.com/in/skpowar</a>
+    </div>
+
+    <h2>Professional Summary</h2>
+    <p>Empathetic and detail-driven hospitality professional with 8+ years of experience in guest relations, concierge services, and event operations. Adept at crafting personalized experiences, resolving complex issues with grace, and fostering long-term client loyalty. Proven leadership in coordinating high-impact events and managing front office operations. Seeking to bring warmth, precision, and proactive service to the Marriott Virtual Ambassador role.</p>
+
+    <h2>Core Strengths</h2>
+    <ul>
+      <li>Personalized Guest Experience</li>
+      <div class="skill-bar"><div class="skill-level" style="--target-width: 95%;"></div></div>
+      <li>Relationship Cultivation & Retention</li>
+      <div class="skill-bar"><div class="skill-level" style="--target-width: 90%;"></div></div>
+      <li>Multichannel Communication</li>
+      <div class="skill-bar"><div class="skill-level" style="--target-width: 85%;"></div></div>
+      <li>Conflict Resolution & Empathy</li>
+      <div class="skill-bar"><div class="skill-level" style="--target-width: 90%;"></div></div>
+      <li>Hospitality Operations & Event Setup</li>
+      <div class="skill-bar"><div class="skill-level" style="--target-width: 88%;"></div></div>
+    </ul>
+
+    <h2>Hospitality Experience</h2>
+    <ul>
+      <li><span class="job-title">Hotel Indigo at The Alamo – San Antonio, TX</span> <span class="date">Jan 2014 – Jun 2015</span><br>
+        Guest Relations Associate – Delivered tailored guest experiences, coordinated departments, and resolved concerns.</li>
+      <li><span class="job-title">Holiday Inn Riverwalk – San Antonio, TX</span> <span class="date">Aug 2009 – Jul 2010</span><br>
+        Concierge & Guest Services – Managed reservations, curated bookings, and supported guest transitions.</li>
+      <li><span class="job-title">La Mansion Del Rio Hotel – San Antonio, TX</span> <span class="date">Jun 2007 – Dec 2008</span><br>
+        Banquet Supervisor – Led event setups, supported VIP functions, and ensured layout precision.</li>
+      <li><span class="job-title">22 Jermyn St Hotel – London, UK</span> <span class="date">Mar 2006 – Feb 2007</span><br>
+        Hotel Operational Trainee – Rotated through front office, guest services, and housekeeping.</li>
+    </ul>
+
+    <h2>QA & Support Experience</h2>
+    <ul>
+      <li><span class="job-title">Citibank – San Antonio, TX</span> <span class="date">Jan 2016 – Dec 2016</span><br>
+        QA Analyst – Led UAT, documented test cases, and balanced priorities in fast-paced environments.</li>
+      <li><span class="job-title">Datamatics – Mumbai, India</span> <span class="date">Jul 2015 – Dec 2015</span><br>
+        QA Intern – Authored test cases, tracked defects, and reviewed documentation.</li>
+      <li><span class="job-title">Online Contracting – Remote</span> <span class="date">Jan 2024 – Present</span><br>
+        Freelancer – Supporting QA, annotation, and customer service projects remotely.</li>
+    </ul>
+
+    <h2>Additional Roles</h2>
+    <ul>
+      <li><span class="job-title">Yellow Checker Star Transportation – San Antonio, TX</span> <span class="date">Jan 2010 – Dec 2013</span><br>
+        Independent Contractor – Assisted travelers with luggage and navigation.</li>
+      <
